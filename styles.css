@@ -1,8 +1,8 @@
 /* Custom properties/variables  */
 :root {
     --main-colour: #fcfcfc;
-    --second-colour: #be3144;
-    --third-colour: #45567d;
+    --second-colour: #C51;
+    --third-colour: #336;
     --fourth-colour: #303841;
   }
   
@@ -246,32 +246,6 @@
     padding: 2rem 0.5rem;
   }
   
-  .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 2px;
-  }
-  
-  .btn-show-all {
-    font-size: 2rem;
-    background: var(--fourth-colour);
-    transition: background 0.3s ease-out;
-  }
-  
-  .btn-show-all:hover {
-    background: var(--second-colour);
-  }
-  
-  .btn-show-all:hover > i {
-    transform: translateX(2px);
-  }
-  
-  .btn-show-all > i {
-    margin-left: 10px;
-    transform: translateX(0);
-    transition: transform 0.3s ease-out;
-  }
-  
   /* Contact section */
   
   .contact-section {
@@ -302,7 +276,7 @@
   
   .contact-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     max-width: 980px;
     margin-top: 4rem;
