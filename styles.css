@@ -215,6 +215,7 @@
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
+    padding-top: 2rem;
   }
   
   @media (max-width: 30.625em) {
