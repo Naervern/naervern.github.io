@@ -164,6 +164,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg?1655410647");
     background-size: cover;
     background-position: 50% 0;
+    object-fit: cover;
   }
   
   .welcome-section > p {
