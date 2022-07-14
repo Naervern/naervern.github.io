@@ -165,7 +165,7 @@
     min-height: 100vmin;
     height: 100vh;
     background-color: #000;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg?1655410647");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cloud-object-storage-0q-cos-standard-5f7.s3.us-south.cloud-object-storage.appdomain.cloud/dragon-visits-kobold-school-naervern.jpg");
     background-size: scale-down;
     background-position: 50% 0;
     background-repeat: no-repeat;
