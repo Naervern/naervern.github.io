@@ -368,3 +368,21 @@
   h3 {
     font-size: 3rem;
   }
+
+  .table1 {
+    padding: 1rem;
+    width: 75vw;
+    min-width: 800px;
+    max-width: 1060px;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    grid-template-columns: 25% 9% 9% 9% 16% 18%;
+    grid-template-rows: 2fr repeat(5, 1fr)
+  }
+
+  @media (max-width: 61.25em) {
+    .table1{
+      max-width: 95vw;
+    }
+  }
