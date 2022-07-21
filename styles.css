@@ -371,9 +371,9 @@
 
   .table1 {
     padding: 1rem;
-    width: 75vw;
-    min-width: 800px;
-    max-width: 1080px;
+    width: 75%;
+    min-width: 900px;
+    max-width: 1200px;
     display: grid;
     align-self: center;
     justify-content: center;
@@ -383,7 +383,7 @@
 
   @media (max-width: 61.25em) {
     .table1{
-      width: 95vw;
-      min-width: 95vw;
+      width: 95%;
+      min-width: 95%;
     }
   }
