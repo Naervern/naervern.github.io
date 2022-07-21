@@ -37,7 +37,27 @@
 <style>
 
 </style>
-  
+
+<script>
+  var menuW, bodyW;
+  var updateSize = function() {
+    // Get the menu size
+    menuW = $(".menu").width();
+    // Get the body size
+    bodyW = $("body").width();
+    // Update menu with body size
+    $(".menu").css("maxWidth", bodyW);
+  }
+
+  // If you need this to happen on window resize
+  $(window).resize(function() {
+    updateSize();
+  });
+
+  // Update the size at the script load
+  updateSize();
+</script>
+
 </head>
 
 <body>
