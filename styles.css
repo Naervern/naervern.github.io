@@ -383,6 +383,7 @@
 
   @media (max-width: 61.25em) {
     .table1{
+      width: 95vw;
       min-width: 95vw;
     }
   }
