@@ -89,7 +89,7 @@
   
   img {
     display: block;
-    width: 100%;
+    max-width: 100%;
   }
 
   /* nav */
@@ -123,11 +123,12 @@
 @media (max-width: 61.25em) {
   .nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 6rem;
     height: 65px;
     background: black;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
@@ -387,7 +388,6 @@
     justify-content: center;
     grid-template-columns: 30% 10% 10% 10% 18% 22%;
     grid-template-rows: 2fr repeat(1fr);
-    text-align: center;
   }
 
   @media (max-width: 61.25em) {
