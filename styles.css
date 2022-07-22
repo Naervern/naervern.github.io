@@ -356,10 +356,12 @@
 
   .table-left {
     padding: 0.3rem 0.1rem;
+    height: 3.6rem;
   }
 
   .table-item {
     padding: 0.3rem 0.1rem;
+    height: 3.6rem;
   }
 
   .left-anchored-text {
@@ -379,12 +381,13 @@
     padding: 1rem;
     width: 75%;
     min-width: 900px;
-    max-width: 1200px;
+    max-width: 1080px;
     display: grid;
     align-self: center;
     justify-content: center;
     grid-template-columns: 30% 10% 10% 10% 18% 22%;
-    grid-template-rows: 2fr repeat(5, 1fr)
+    grid-template-rows: 2fr repeat(1fr);
+    text-align: center;
   }
 
   @media (max-width: 61.25em) {
