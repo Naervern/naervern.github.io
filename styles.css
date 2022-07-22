@@ -391,6 +391,7 @@
     .table1{
       width: 95%;
       min-width: 95%;
-      max-width: 1200px;
+      max-width: 95%;
+      padding: 1rem 0;
     }
   }
