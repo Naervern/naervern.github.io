@@ -383,12 +383,12 @@
 
   .table-left {
     padding: 0.3rem 0.1rem;
-    height: 3.6rem;
+    height: auto, 3.6rem;
   }
 
   .table-item {
     padding: 0.3rem 0.1rem;
-    height: 3.6rem;
+    height: auto, 3.6rem;
   }
 
   .left-anchored-text {
@@ -422,5 +422,6 @@
       min-width: 95%;
       max-width: 95%;
       padding: 1rem 0;
+      font-size-adjust: calc(width/3840);
     }
   }
