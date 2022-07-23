@@ -65,7 +65,8 @@
 
   @media only screen and (hover: none) and (pointer: coarse){
     body{
-      min-width: device-width;
+      min-width: 100%;
+      max-width: 1080px;
     }
   }
   
