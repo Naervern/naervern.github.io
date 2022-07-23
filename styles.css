@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bona+Nova:wght@400;700&family=Concert+One&family=Fondamento&family=Inknut+Antiqua:wght@400;500;600;700&family=Ledger&family=Roboto+Mono&display=swap');
+
 /* Custom properties/variables  */
 :root {
     --main-colour: #fcfcfc;
@@ -72,7 +74,7 @@
   
   h1,
   h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Fondamento','Raleway', sans-serif;
     font-weight: 700;
     text-align: center;
   }
@@ -175,7 +177,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 15%;
+    padding: 15vh;
     align-items: center;
     width: 100%;
     min-height: 100vmin;
