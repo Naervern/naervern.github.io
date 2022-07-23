@@ -395,7 +395,10 @@
     max-width: 1400px;
   }
 
-  li {
+  .left-anchored-text > ul {
+    position: relative;
+    left: 2rem;
+    list-style: inside;
   }
   
   h3 {
