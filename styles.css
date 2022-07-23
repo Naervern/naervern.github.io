@@ -212,6 +212,7 @@
     color: var(--main-colour);
     min-height: 100px;
     font-family: 'Fondamento','Raleway', sans-serif;
+    white-space: nowrap;
   }
   
   .welcome-section > h1 {
