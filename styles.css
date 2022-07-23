@@ -90,7 +90,7 @@
   
   h1,
   h2 {
-    font-family: 'Fondamento','Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     text-align: center;
   }
@@ -414,7 +414,6 @@
     justify-content: center;
     grid-template-columns: 30% 10% 10% 10% 18% 22%;
     grid-template-rows: 2fr repeat(1fr);
-    font-size: 1.3rem;
   }
 
   @media (max-width: 61.25em) {
