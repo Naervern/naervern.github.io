@@ -558,7 +558,7 @@
   
   .comm-steps {
     width: 50%;
-    min-width: 600px;
+    min-width: 500px;
     max-width: 1920px;
     margin: auto;
     align-self: flex-start;
