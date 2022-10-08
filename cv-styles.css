@@ -285,7 +285,7 @@
   }
   
 
-  .topper-section {
+  .first-section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -296,13 +296,13 @@
     height: 100vh;
     max-height: 2160px;
     background-color: #000;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg");
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg"); */
     background-size: scale-down;
     background-position: 50% 0;
     background-repeat: no-repeat;
   }
   
-  .welcome-section > p {
+  .first-section > p {
     font-size: 3rem;
     font-weight: 200;
     color: var(--main-colour);
@@ -311,30 +311,30 @@
     white-space: nowrap;
   }
   
-  .welcome-section > h1 {
+  .first-section > h1 {
     font-family: 'Raleway', sans-serif;
   }
   
-  .projects-section {
+  .certs-section {
     text-align: center;
     padding: 10rem 2rem 10rem 165px;
     background:#150210;
   }
   
   @media (max-width: 61.25em) {
-    .projects-section {
+    .certs-section {
         padding: 10rem 2rem;
     }
   }
 
-  .projects-section-header {
+  .certs-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-colour);
   }
   
   @media (max-width: 28.75em) {
-    .projects-section-header {
+    .certs-section-header {
       font-size: 4rem;
     }
   }
