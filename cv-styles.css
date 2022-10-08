@@ -291,15 +291,16 @@
     justify-content: flex-start;
     padding: 15vh;
     align-items: center;
-    width: 100%;
-    min-height: 100vmin;
-    height: 100vh;
+    width: 100%;    
+    min-height: 8rem;
+    height: 20vh;
     max-height: 2160px;
     background-color: #000;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg"); */
+    /*
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg");
     background-size: scale-down;
     background-position: 50% 0;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
   }
   
   .first-section > p {
