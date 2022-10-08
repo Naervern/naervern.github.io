@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bona+Nova:wght@400;700&family=Concert+One&family=Fondamento&family=Inknut+Antiqua:wght@400;500;600;700&family=Ledger&family=Roboto+Mono&display=swap');
+
+@font-face{
+	font-family:Fondament;
+	src:url(/resources/fonts/Fondamento-Regular.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:Fondament;
+	src:url(/resources/fonts/Fondamento-Italic.ttf) format("ttf");
+	font-weight:400;
+	font-style:italic;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:Ledger;
+	src:url(/resources/fonts/Ledger-Regular.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:BonaNova;
+	src:url(/resources/fonts/BonaNova-Regular.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:BonaNova;
+	src:url(/resources/fonts/BonaNova-Bold.ttf) format("ttf");
+	font-weight:700;
+	font-style:bold;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:BonaNova;
+	src:url(/resources/fonts/BonaNova-Italic.ttf) format("ttf");
+	font-weight:400;
+	font-style:italic;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:Lato;
+	src:url(/resources/fonts/Lato-Regular.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:Lato;
+	src:url(/resources/fonts/Lato-Bold.ttf) format("ttf");
+	font-weight:700;
+	font-style:bold;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:Lato;
+	src:url(/resources/fonts/Lato-Italic.ttf) format("ttf");
+	font-weight:400;
+	font-style:italic;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:InknutAntiqua;
+	src:url(/resources/fonts/InknutAntiqua-Regular.ttf) format("ttf");
+	font-weight:400;
+	font-style:normal;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:InknutAntiqua;
+	src:url(/resources/fonts/InknutAntiqua-Bold.ttf) format("ttf");
+	font-weight:700;
+	font-style:bold;
+	font-display:fallback
+}
+
+@font-face{
+	font-family:InknutAntiqua;
+	src:url(/resources/fonts/InknutAntiqua-Italic.ttf) format("ttf");
+	font-weight:400;
+	font-style:italic;
+	font-display:fallback
+}
+
+/* Custom properties/variables  */
+:root {
+    --main-colour: #fcfcfc;
+    --second-colour: #C51;
+    --third-colour: #336;
+    --fourth-colour: #303841;
+    --fifth-colour: #ff7f50;
+  }
+  
+  /* Base reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* box-sizing and font sizing */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  
+    /* Set font size for easy rem calculations
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+ @media (max-width: 75em) {
+    html {
+      font-size: 56%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 54%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 52%;
+    }
+  }
+  
+  /* Base styles */
+  
+  body {
+    font-family: sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-colour);
+    background-color: black;
+    min-width: 800px;
+  }
+
+  @media only screen and (hover: none) and (pointer: coarse){
+    body{
+      min-width: 100%;
+      max-width: 1080px;
+    }
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-colour);
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* nav */
+  .nav {
+    /*display: flex;*/
+    /*justify-content: space-evenly;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: black;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    opacity: 0.4;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+    transition: all .6s ease-in-out;
+
+  }
+  
+  .nav-list a:hover {
+    background: #C51;
+    color: white;
+    border-radius: 30px;
+    transition: all .15s;
+  }
+
+  .nav:hover{
+    opacity: 0.8;
+    transition: all .7s;
+  }
+
+  .nav-list li:hover {
+    transition: all 0.2s;
+  }
+  
+
+@media (max-width: 61.25em) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 6rem;
+    height: auto;
+    background: black;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    opacity: 0.4;
+  }
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  .nav-list a {
+    font-size: 2.4rem;
+  }
+  
+  .nav-list li:hover {
+    offset-position: 2rem 0 0 0;
+    transition: all 0.2s;
+  }
+}
+
+
+  
+
+  
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
+
+  .topper-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15vh;
+    align-items: center;
+    width: 100%;
+    min-height: 100vmin;
+    height: 100vh;
+    max-height: 2160px;
+    background-color: #000;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg");
+    background-size: scale-down;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+  
+  .welcome-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    color: var(--main-colour);
+    min-height: 100px;
+    font-family: 'Raleway', sans-serif;
+    white-space: nowrap;
+  }
+  
+  .welcome-section > h1 {
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .projects-section {
+    text-align: center;
+    padding: 10rem 2rem 10rem 165px;
+    background:#150210;
+  }
+  
+  @media (max-width: 61.25em) {
+    .projects-section {
+        padding: 10rem 2rem;
+    }
+  }
+
+  .projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-colour);
+  }
+  
+  @media (max-width: 28.75em) {
+    .projects-section-header {
+      font-size: 4rem;
+    }
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    padding-top: 2rem;
+  }
+  
+  @media (max-width: 30.625em) {
+    .projects-section {
+      padding: 6rem 1rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .project {
+    background: var(--fourth-colour);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+  }
+  
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+  }
+  
+  /* Contact section */
+  
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10rem 2rem 10rem 175px;
+    background: var(--fourth-colour);
+    border-top: 5px solid var(--second-colour);
+  }
+
+  @media (max-width: 61.25em) {
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 5% 5%;
+  }
+}
+
+  .contact-section-header > h2 {
+    font-size: 6rem;
+  }
+  
+  @media (max-width: 28.75em) {
+    .contact-section-header > h2 {
+      font-size: 4rem;
+    }
+  }
+  
+  .contact-section-header > p {
+    font-style: italic;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+  
+  .fine-print {
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: sans-serif;
+  }
+
+  .table-top {
+    padding: 0.7rem 0.1rem 0.2rem 0.1rem;
+    background-color: #000;
+    align-items: center;
+    text-align: center;
+  }
+
+  .table-left, .table-item {
+    padding: 0.3rem 0.1rem;
+    min-height: 3.6rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-anchored-text, .comm-steps {
+    align-self: flex;
+    text-align: left;
+    max-width: 1280px;
+  }
+
+  .left-anchored-text > ul {
+    position: relative;
+    left: 2rem;
+    list-style: inside;
+  }
+
+  .left-anchored-text > ol{
+    position: relative;
+    list-style-position: outside;
+    left: 3rem;
+
+  }
+
+  .left-anchored-text > ol > li {
+    padding-top: 1em;
+    padding-left: 1em;
+
+  }
+
+  .comm-steps{
+    clear: both;
+    list-style: none;
+    padding-left: 2%;
+  }
+
+
+  #commission-info li {
+    margin: 2rem 0;
+    padding-top: 1rem;
+    display: block;
+    position: relative;
+    counter-increment: inst;
+
+  }
+
+  #commission-info li::before {
+    content: counter(inst);
+
+    background: rgba(255, 150, 0, 0.35);
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 0% 50% 50% 50%;
+
+    text-shadow: 1px 1px rgba(255, 150, 0, 0.5);
+  
+    font-size: 1.5em;
+    text-align: center;
+    
+    padding-top: 0;
+    padding-left: 2rem;
+    left: -5%;
+    top: -0.65em;
+    height: 1.35em;
+    width: 1.35em;
+
+
+    transition: all 0.2s ease-in-out;
+    
+    z-index: -1;
+  }
+  
+  .comm-steps {
+    width: 50%;
+    min-width: 480px;
+    max-width: 1920px;
+    margin: auto;
+    align-self: flex-start;
+  }
+  
+  .comm-steps p {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color:var(--second-colour) !important;
+    margin:0; padding: 2rem;
+    counter-increment: section;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .comm-steps p:nth-child(even):before {
+    content: counter(section);
+    right: 100%; 
+    margin-right: -20px;
+    position: absolute;
+    border-radius: 50%;
+ 
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--second-colour);
+    text-align:center;
+    color: white;
+    font-size: 110%;
+  }
+  
+  .comm-steps p:nth-child(odd):before {
+    content: counter(section);
+    left: 100%; 
+    margin-left: -2rem;
+    position: absolute;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--second-colour);
+    text-align:center;
+    color: white;
+    font-size: 110%;
+  }
+  
+  .comm-steps p:nth-child(even) {
+    border-left: 0.4rem solid;
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    margin-right: 2rem; 
+    padding-left: 6rem;
+    padding-right: 2rem;
+
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+  }
+  
+  .comm-steps p:nth-child(odd) {
+    border-right: 0.4rem solid;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+
+    margin-left: 2rem; 
+    padding-left: 2rem;
+    padding-right: 6rem;
+
+    border-top-left-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+  }
+  
+  .comm-steps p:first-child {
+    border-top: 2px solid;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+  }
+  
+  .comm-steps p:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+  }
+
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  .table1 {
+    padding: 1rem;
+    width: 75%;
+    min-width: 900px;
+    max-width: 1080px;
+    display: grid;
+    align-self: center;
+    justify-content: center;
+    grid-template-columns: 30% 10% 10% 10% 18% 22%;
+    grid-template-rows: 2fr repeat(1fr);
+  }
+
+  @media (max-width: 61.25em) {
+    .table1{
+      width: 95%;
+      min-width: 95%;
+      max-width: 95%;
+      padding: 1rem 0;
+      font-size-adjust: calc(width/3840);
+    }
+  }
+
+
+    /* Footer */
+  
+    footer {
+      font-weight: 300;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 2rem;
+      background: black;
+      border-top: 5px solid var(--second-colour);
+    }
+    
+    footer > p {
+      margin: 2rem;
+      padding-left: 155px;
+    }
+    
+    footer i {
+      vertical-align: middle;
+    }
+    
+    @media (max-width: 61.25em) {
+      footer > p {
+        padding-left: 5px;
+      }
+    }
+
+    @media (max-width: 28.75em) {
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
