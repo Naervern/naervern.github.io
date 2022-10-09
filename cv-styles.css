@@ -491,7 +491,7 @@
   }
 
 
-  #commission-info li {
+  #certificates li {
     margin: 2rem 0;
     padding-top: 1rem;
     display: block;
@@ -500,7 +500,7 @@
 
   }
 
-  #commission-info li::before {
+  #certificates li::before {
     content: counter(inst);
 
     background: rgba(255, 150, 0, 0.35);
