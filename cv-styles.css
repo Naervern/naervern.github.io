@@ -316,26 +316,26 @@
     font-family: 'Raleway', sans-serif;
   }
   
-  .certs-section {
+  .cert-section {
     text-align: center;
     padding: 10rem 2rem 10rem 165px;
     background:#150210;
   }
   
   @media (max-width: 61.25em) {
-    .certs-section {
+    .cert-section {
         padding: 10rem 2rem;
     }
   }
 
-  .certs-section-header {
+  .cert-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-colour);
   }
   
   @media (max-width: 28.75em) {
-    .certs-section-header {
+    .cert-section-header {
       font-size: 4rem;
     }
   }
@@ -459,7 +459,7 @@
     text-align: center;
   }
 
-  .left-anchored-text, .comm-steps {
+  .left-anchored-text, .cert-list {
     align-self: flex;
     text-align: left;
     max-width: 1280px;
@@ -484,7 +484,7 @@
 
   }
 
-  .comm-steps{
+  .cert-list{
     clear: both;
     list-style: none;
     padding-left: 2%;
@@ -527,7 +527,7 @@
     z-index: -1;
   }
   
-  .comm-steps {
+  .cert-list {
     width: 50%;
     min-width: 480px;
     max-width: 1920px;
@@ -535,7 +535,7 @@
     align-self: flex-start;
   }
   
-  .comm-steps p {
+  .cert-list p {
     border-top: 2px solid;
     border-bottom: 2px solid;
     border-color:var(--second-colour) !important;
@@ -546,7 +546,7 @@
     padding-bottom: 4rem;
   }
   
-  .comm-steps p:nth-child(even):before {
+  .cert-list p:nth-child(even):before {
     content: counter(section);
     right: 100%; 
     margin-right: -20px;
@@ -561,7 +561,7 @@
     font-size: 110%;
   }
   
-  .comm-steps p:nth-child(odd):before {
+  .cert-list p:nth-child(odd):before {
     content: counter(section);
     left: 100%; 
     margin-left: -2rem;
@@ -575,40 +575,24 @@
     font-size: 110%;
   }
   
-  .comm-steps p:nth-child(even) {
+  .cert-list p:nth-child(even) {
     border-left: 0.4rem solid;
-    border-top-left-radius: 4rem;
-    border-bottom-left-radius: 4rem;
     margin-right: 2rem; 
     padding-left: 6rem;
     padding-right: 2rem;
-
-    border-top-right-radius: 4rem;
-    border-bottom-right-radius: 4rem;
+    border-bottom: 0px solid;
   }
   
-  .comm-steps p:nth-child(odd) {
+  .cert-list p:nth-child(odd) {
     border-right: 0.4rem solid;
-    border-top-right-radius: 4rem;
-    border-bottom-right-radius: 4rem;
-
     margin-left: 2rem; 
     padding-left: 2rem;
     padding-right: 6rem;
-
-    border-top-left-radius: 4rem;
-    border-bottom-left-radius: 4rem;
+    border-bottom: 0px solid;
   }
   
-  .comm-steps p:first-child {
+  .cert-list p:first-child {
     border-top: 2px solid;
-    border-top-right-radius:0;
-    border-top-left-radius:0;
-  }
-  
-  .comm-steps p:last-child {
-    border-bottom-right-radius:0;
-    border-bottom-left-radius:0;
   }
 
 
