@@ -600,30 +600,22 @@
     font-size: 3rem;
   }
 
-  .table1 {
-    padding: 1rem;
-    width: 75%;
-    min-width: 900px;
-    max-width: 1080px;
-    display: grid;
-    align-self: center;
-    justify-content: center;
-    grid-template-columns: 30% 10% 10% 10% 18% 22%;
-    grid-template-rows: 2fr repeat(1fr);
+  .referer{
+    color: #bbb;
+    font-size: 85%;
+    position: relative;
+    top: -2rem;
   }
 
-  @media (max-width: 61.25em) {
-    .table1{
-      width: 95%;
-      min-width: 95%;
-      max-width: 95%;
-      padding: 1rem 0;
-      font-size-adjust: calc(width/3840);
-    }
+  .cert-name{
+    font-size: 110%;
   }
 
+  #verify-l{
+    text-decoration: underline;
+  }
 
-    /* Footer */
+  /* Footer */
   
     footer {
       font-weight: 300;
@@ -655,3 +647,6 @@
         text-align: center;
       }
     }
+
+
+
