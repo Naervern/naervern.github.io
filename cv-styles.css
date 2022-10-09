@@ -303,7 +303,7 @@
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 4rem;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 6rem;
     padding-top: 2rem;
@@ -523,13 +523,12 @@
   
   .cert-2-tab {
     padding: 1rem 0 0 0;
-    width: 90%;
+    width: 95%;
     min-width: 900px;
     display: grid;
     align-self: center;
     justify-content: center;
-    grid-template-columns: 38% 62%;
-    grid-template-rows: 2fr repeat(1fr);
+    grid-template-columns: 35% 65%;
   }
 
 
