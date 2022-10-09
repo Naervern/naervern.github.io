@@ -548,7 +548,7 @@
     top: 0rem;
     padding-left: 4rem;
     background-color:#150210;
-    z-index: 2;
+    z-index: 11;
     height: 8vh;
     padding-top: 2vh;
   }
