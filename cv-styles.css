@@ -513,9 +513,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    text-align: center;
+    
+    align-self: flex;
+    align-items: flex-start;
     padding: 10rem 2rem 10rem 2rem;
     background:var(--wine-colour);
+    
   }
   
   .cert-2-tab {
@@ -536,14 +539,23 @@
     }
   }
 
-  .cert-2-section-header {
+  .cert-2-header {
+    position: -webkit-sticky;
+    position: sticky;
+    overflow: auto;
+    align-self: flex;
+    font-size: 3.6rem;  
+    z-index: 2;
+    top: 1rem;
     max-width: 640px;
-    margin: 0 auto 6rem auto;
+    margin: auto;
+/*
     border-bottom: 0.2rem solid var(--main-colour);
+    */
   }
   
   @media (max-width: 28.75em) {
-    .cert-2-section-header {
+    .cert-2-header {
       font-size: 3.6rem;
     }
   }
@@ -553,7 +565,7 @@
     top: 0;
     right: 0;
     line-height: 3.6rem;
-    min width: 400px;
+    min-width: 400px;
     background: black;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
@@ -566,8 +578,11 @@
   .cert-preview {
     position: -webkit-sticky;
     position: sticky;
+    overflow: auto;
+    z-index: 1;
+    top: 8vh;
     background-color: black;
-    height: 80vh;
+    height: 84vh;
   }
 
   .list-tab a {
