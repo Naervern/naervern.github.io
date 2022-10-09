@@ -514,7 +514,7 @@
     flex-direction: column;
     width: 100%;
     text-align: center;
-    padding: 10rem 2rem 10rem 165px;
+    padding: 10rem 2rem 10rem 2rem;
     background:var(--wine-colour);
   }
   
@@ -525,7 +525,7 @@
     display: grid;
     align-self: center;
     justify-content: center;
-    grid-template-columns: 36% 64%;
+    grid-template-columns: 38% 62%;
     grid-template-rows: 2fr repeat(1fr);
   }
 
@@ -544,7 +544,7 @@
   
   @media (max-width: 28.75em) {
     .cert-2-section-header {
-      font-size: 4rem;
+      font-size: 3.6rem;
     }
   }
 
@@ -572,7 +572,7 @@
 
   .list-tab a {
     display: block;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 2rem;
     transition: all .6s ease-in-out;
 
