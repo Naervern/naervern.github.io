@@ -14,20 +14,20 @@
 
   <meta name="title" content="Naervern CV"/>
   <meta property="og:title" content="Naervern CV"/>
-  <meta property="og:description" content="Digital Artist and Engineer. Here you can find my contact information, image showcase and everything you need to know about commissioning my work."/>
+  <!--<meta property="og:description" content="Digital Artist and Engineer. Here you can find my contact information, image showcase and everything you need to know about commissioning my work."/>
   <meta name="description" content="Digital Artist and Engineer. Here you can find my contact information, image showcase and everything you need to know about commissioning my work." data-id="main"/>
   <meta property="og:url" content="https://naervern.github.io/"/>
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="627" />
   <meta name="author" content="Naervern">
 
-  <!-- the very not smart twitter card metas -->
+
   <meta name="twitter:card" content="summary_large_image"/>
   <meta property='twitter:title' content="Naervern CV"/>
   <meta property='twitter:image' content="https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg"/>
   <meta name="twitter:site" content="@naervern" />
   <meta name="twitter:creator" content="@naervern" />
-
+  -->
   <!-- alt. description
   Naervern's contact, showcase and commission information. 
   -->
@@ -54,6 +54,16 @@
 
   // Update the size at the script load
   updateSize();
+
+  function updateCertPreview() {
+    
+  }
+
+  function previewCert1(link){
+    document.getElementById('preview-box1').innerHTML= '<img src="https://' +link + '" id="preview-1"/>' ;
+  }
+
+
 </script>
 
 </head>
@@ -99,109 +109,132 @@
 </section>
 
 <section id="cert-2" class="cert-2-section">
-  <div class="cert-2-header">
-    Credentials
-  </div>
+
 
   <div class="cert-2-tab">
+    <div>
+      <div class="cert-2-header">
+        Credentials
+      </div>
+      
+    <div class="list-tab">
+      
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/verify/JUV5EJ9MCSXF"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~JUV5EJ9MCSXF/CERTIFICATE_LANDING_PAGE~JUV5EJ9MCSXF.jpeg')">
+          Introduction to Test Driven Development (TDD)</a>      
+      </li>
 
-  <div class="list-tab">
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/verify/JUV5EJ9MCSXF"target="_blank" rel="noopener noreferrer">
-        Introduction to Test Driven Development (TDD)</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/NPYG34MGQ3PL"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~L7TKTQ9EFT9Q/CERTIFICATE_LANDING_PAGE~L7TKTQ9EFT9Q.jpeg')">
+          Introduction to Hardware and Operating Systems</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/NPYG34MGQ3PL"target="_blank" rel="noopener noreferrer">
-        Introduction to Hardware and Operating Systems</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/M94URSSSPSV6"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~M94URSSSPSV6/CERTIFICATE_LANDING_PAGE~M94URSSSPSV6.jpeg')">
+          Developing Cloud Native Applications</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/M94URSSSPSV6"target="_blank" rel="noopener noreferrer">
-        Developing Cloud Native Applications</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/WGRYHMB4Y55Y"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Python Project for AI & Application Development</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/WGRYHMB4Y55Y"target="_blank" rel="noopener noreferrer">
-        Python Project for AI & Application Development</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/FWKCVLWJXK7U"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Introduction to Web Development with HTML, CSS, JavaScript</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/FWKCVLWJXK7U"target="_blank" rel="noopener noreferrer">
-        Introduction to Web Development with HTML, CSS, JavaScript</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/GA9UBZP38NTW"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Application Development using Microservices and Serverless</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/GA9UBZP38NTW"target="_blank" rel="noopener noreferrer">
-        Application Development using Microservices and Serverless</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/L7TKTQ9EFT9Q"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Python for Data Science, AI & Development</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/L7TKTQ9EFT9Q"target="_blank" rel="noopener noreferrer">
-        Python for Data Science, AI & Development</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/DF3GSYS3DLBW"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Hands-on Introduction to Linux Commands and Shell Scripting</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/DF3GSYS3DLBW"target="_blank" rel="noopener noreferrer">
-        Hands-on Introduction to Linux Commands and Shell Scripting</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/YY3A8MF7G47R"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Getting Started with Git and GitHub</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/YY3A8MF7G47R"target="_blank" rel="noopener noreferrer">
-        Getting Started with Git and GitHub</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/UYP2HPT4N85Y"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Introduction to Cloud Computing</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/UYP2HPT4N85Y"target="_blank" rel="noopener noreferrer">
-        Introduction to Cloud Computing</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/78AFFSB2SPUP"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Introduction to Agile Development and Scrum</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/78AFFSB2SPUP"target="_blank" rel="noopener noreferrer">
-        Introduction to Agile Development and Scrum</a>      
-    </li>
+      <li>
+        <a href="https://www.coursera.org/account/accomplishments/records/ZGCPUHNKJDFW"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Introduction to DevOps</a>      
+      </li>
 
-    <li>
-      <a href="https://www.coursera.org/account/accomplishments/records/ZGCPUHNKJDFW"target="_blank" rel="noopener noreferrer">
-        Introduction to DevOps</a>      
-    </li>
+      <li>
+        <a href="https://www.sololearn.com/Certificate/CT-X9MLWHMI/png"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Sololearn: SQL</a>      
+      </li>
 
-    <li>
-      <a href="https://www.sololearn.com/Certificate/CT-X9MLWHMI/png"target="_blank" rel="noopener noreferrer">
-        Sololearn: SQL</a>      
-    </li>
+      <li>
+        <a href="https://www.sololearn.com/Certificate/CT-VVKDULOJ/png"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Sololearn: C++</a>      
+      </li>
 
-    <li>
-      <a href="https://www.sololearn.com/Certificate/CT-VVKDULOJ/png"target="_blank" rel="noopener noreferrer">
-        Sololearn: C++</a>      
-    </li>
+      <li>
+        <a href="https://www.sololearn.com/Certificate/CT-1CYSAYML/png"target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Sololearn: Java</a>      
+      </li>
 
-    <li>
-      <a href="https://www.sololearn.com/Certificate/CT-1CYSAYML/png"target="_blank" rel="noopener noreferrer">
-        Sololearn: Java</a>      
-    </li>
+      <li>
+        <a href="https://www.sololearn.com/Certificate/CT-IKLJLYVJ/png" target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Sololearn: Python for Data Science</a>      
+      </li>
 
-    <li>
-      <a href="https://www.sololearn.com/Certificate/CT-IKLJLYVJ/png" target="_blank" rel="noopener noreferrer">
-        Sololearn: Python for Data Science</a>      
-    </li>
+      <li>
+        <a href="https://www.sololearn.com/Certificate/CT-EA9MQUHA/png" target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Sololearn: Data Science</a>      
+      </li>
 
-    <li>
-      <a href="https://www.sololearn.com/Certificate/CT-EA9MQUHA/png" target="_blank" rel="noopener noreferrer">
-        Sololearn: Data Science</a>      
-    </li>
+      <li>
+        <a href="https://www.sololearn.com/Certificate/CT-6LIWEYRC/png" target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('')">
+          Sololearn: C#</a>      
+      </li>
 
-    <li>
-      <a href="https://www.sololearn.com/Certificate/CT-6LIWEYRC/png" target="_blank" rel="noopener noreferrer">
-        Sololearn: C#</a>      
-    </li>
+    </div>
+  </div>
+  <div class="cert-preview">
+    <div id="preview-box1">
+      
+    </div>
 
   </div>
-  
-  <span><div class="cert-preview">
-
-
-  </div></span>
   </div>
 </section>
 
