@@ -496,24 +496,11 @@
     padding-top: 1rem;
     display: block;
     position: relative;
-    counter-increment: inst;
 
   }
 
   #certificates li::before {
-    content: counter(inst);
-
-    background: rgba(255, 150, 0, 0.35);
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    border-radius: 0% 50% 50% 50%;
-
-    text-shadow: 1px 1px rgba(255, 150, 0, 0.5);
   
-    font-size: 1.5em;
-    text-align: center;
-    
     padding-top: 0;
     padding-left: 2rem;
     left: -5%;
@@ -537,7 +524,6 @@
   
   .cert-list p {
     border-top: 2px solid;
-    border-bottom: 2px solid;
     border-color:var(--second-colour) !important;
     margin:0; padding: 2rem;
     counter-increment: section;
@@ -546,56 +532,6 @@
     padding-bottom: 4rem;
   }
   
-  .cert-list p:nth-child(even):before {
-    content: counter(section);
-    right: 100%; 
-    margin-right: -20px;
-    position: absolute;
-    border-radius: 50%;
- 
-    height: 3rem;
-    width: 3rem;
-    background-color: var(--second-colour);
-    text-align:center;
-    color: white;
-    font-size: 110%;
-  }
-  
-  .cert-list p:nth-child(odd):before {
-    content: counter(section);
-    left: 100%; 
-    margin-left: -2rem;
-    position: absolute;
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-    background-color: var(--second-colour);
-    text-align:center;
-    color: white;
-    font-size: 110%;
-  }
-  
-  .cert-list p:nth-child(even) {
-    border-left: 0.4rem solid;
-    margin-right: 2rem; 
-    padding-left: 6rem;
-    padding-right: 2rem;
-    border-bottom: 0px solid;
-  }
-  
-  .cert-list p:nth-child(odd) {
-    border-right: 0.4rem solid;
-    margin-left: 2rem; 
-    padding-left: 2rem;
-    padding-right: 6rem;
-    border-bottom: 0px solid;
-  }
-  
-  .cert-list p:first-child {
-    border-top: 2px solid;
-  }
-
-
   h3 {
     font-size: 3rem;
   }
