@@ -192,6 +192,10 @@
     text-decoration: none;
     color: var(--main-colour);
   }
+
+  a:hover{
+    color:rgb(255, 134, 69);
+  }
   
   img {
     display: block;
@@ -244,16 +248,17 @@
   
 
   .first-section {
-    display: flex;
-    flex-direction: column;
+
     justify-content: flex-start;
-    padding: 15vh;
+    padding: 10vh;
     align-items: center;
     width: 100%;    
     min-height: 8rem;
-    height: 20vh;
+    height: 36vh;
     max-height: 2160px;
+    max-width: 1440px;
     background-color: #000;
+    text-align: center;
     /*
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg");
     background-size: scale-down;
@@ -283,6 +288,15 @@
   @media (max-width: 61.25em) {
     .cert-section {
         padding: 10rem 2rem;
+    }
+
+    .first-section {
+      height: auto;
+      width: auto;
+    }
+
+    .first-section {
+      font-size: 75%;
     }
   }
 
@@ -417,7 +431,7 @@
     text-align: center;
   }
 
-  .left-anchored-text, .cert-list {
+  .left-anchored-text, .skill-list {
     align-self: flex;
     text-align: left;
     max-width: 1280px;
@@ -442,7 +456,7 @@
 
   }
 
-  .cert-list{
+  .skill-list{
     clear: both;
     list-style: none;
     padding-left: 2%;
@@ -472,22 +486,26 @@
     z-index: -1;
   }
   
-  .cert-list {
-    width: 50%;
+  .skill-list {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5rem;
     min-width: 480px;
     max-width: 1920px;
     margin: auto;
     align-self: flex-start;
   }
   
-  .cert-list p {
+  .skill-list p {
     border-top: 2px solid;
     border-color:var(--second-colour) !important;
-    margin:0; padding: 2rem;
+    margin:0;
+    padding: 2rem;
     counter-increment: section;
     position: relative;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   
   h3 {
@@ -641,5 +659,11 @@
       }
     }
 
+/* Image formatting */
 
+  #selfie {
+    float: right;
+    margin: 5px;
+    height: 22vh;
+  }
 
