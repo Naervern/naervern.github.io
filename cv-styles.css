@@ -303,7 +303,7 @@
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 4rem;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1600px;
     margin: 0 auto;
     margin-bottom: 6rem;
     padding-top: 2rem;
@@ -326,14 +326,14 @@
   }
   
   .project-image {
-    height: calc(100% - 6.8rem);
+    height: calc(100% - 7.8rem);
     width: 100%;
     object-fit: cover;
   }
   
   .project-title {
     font-size: 2rem;
-    padding: 2rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
   
   /* Contact section */
@@ -498,7 +498,7 @@
     color: #bbb;
     font-size: 85%;
     position: relative;
-    top: -2rem;
+    
   }
 
   .cert-name{
