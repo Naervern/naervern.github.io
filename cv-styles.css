@@ -666,3 +666,9 @@
     height: 22vh;
   }
 
+  @media (max-width: 61.25em) {
+    selfie {
+      float: none;
+    }
+  }
+
