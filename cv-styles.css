@@ -282,8 +282,9 @@
   
   .cert-section {
     text-align: center;
-    padding: 10rem 2rem 10rem 165px;
+    padding: 10rem 2rem ;
     background: var(--wine-colour);
+
   }
   
   @media (max-width: 61.25em) {
@@ -458,7 +459,10 @@
   .skill-list{
     clear: both;
     list-style: none;
-    padding-left: 2%;
+  }
+
+  .stepped-block{
+
   }
 
 
