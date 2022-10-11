@@ -249,16 +249,17 @@
 
   .first-section {
 
-    justify-content: flex-start;
+
     padding: 10vh;
-    align-items: center;
+
     width: 100%;    
     min-height: 8rem;
     height: 36vh;
     max-height: 2160px;
-    max-width: 1440px;
+    
     background-color: #000;
     text-align: center;
+    align-items: center;
     /*
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("https://cdnb.artstation.com/p/assets/images/images/050/680/265/large/naervern-dragon-visits-kobold-school.jpg");
     background-size: scale-down;
