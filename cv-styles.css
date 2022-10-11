@@ -293,9 +293,7 @@
     .first-section {
       height: auto;
       width: auto;
-    }
-
-    .first-section {
+      padding: 6vw;
       font-size: 75%;
     }
   }

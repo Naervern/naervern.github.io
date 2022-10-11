@@ -61,6 +61,7 @@
 
   function previewCert1(link){
     document.getElementById('preview-box1').innerHTML= link.startsWith("resources/") ? '<img src="' + link + '"/>' : '<img src="https://' +link + '" id="preview-1"/>' ;
+    animationDuration: 100;
   }
 
 
@@ -174,7 +175,7 @@
           </p>
 
           <p>
-            Backend 
+            App Development (Backend)
             <span class="referer">
               <br>
               Python, JS, C++
@@ -193,7 +194,7 @@
             Cloud Computing 
             <span class="referer">
               <br>
-              IBM CLI
+              IBM CLI and services
             </span>
           </p>
 
@@ -371,6 +372,18 @@
         <a href="resources/pdf/certificado SENAR.pdf" target="_blank" rel="noopener noreferrer"
         onmouseover="previewCert1('resources/img/certificado SENAR_page-0001.jpg')">
           SENAR - Forestry and Water Resources (Brazil)</a>
+      </li>
+
+      <li>
+        <a href="resources\img\olimpiada-matematica-0001.jpg" target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('resources/img/olimpiada-matematica-0001.jpg')">
+          Regional Math Olympiad - 1st Place (Brazil)</a>
+      </li>
+
+      <li>
+        <a href="resources\img\Biobased_2017.jpg" target="_blank" rel="noopener noreferrer"
+        onmouseover="previewCert1('resources/img/Biobased_2017.jpg')">
+          2017 Biobased Battle</a>
       </li>
 
       <li>
