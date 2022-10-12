@@ -469,6 +469,10 @@
 
   }
 
+  #certs-list li{
+    margin: 0;
+  }
+
   #certificates li::before {
   
     padding-top: 0;
@@ -513,7 +517,7 @@
   }
 
   .language-list p {
-    padding-top: 2rem;
+    padding-top: 2  rem;
     padding-bottom: 0rem;
   }
 
@@ -626,6 +630,8 @@
     opacity: 0.8;
     overflow-x: auto;
     transition: all .2s ease-in-out;
+    padding-top: 0;
+    padding-bottom: 0;
 
   }
 
