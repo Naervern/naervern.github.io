@@ -484,10 +484,6 @@
     z-index: -1;
   }
 
-  .skill-list{
-
-  }
-  
   .skill-list, .skill-list-compact {
     clear: both;
     list-style: none;
@@ -545,7 +541,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    
     align-self: flex;
     align-items: flex-start;
     padding: 10rem 2rem 10rem 2rem;
@@ -554,26 +549,19 @@
   }
   
   .cert-2-tab {
-    padding: 1rem 0 0 0;
+    padding: 2rem 0 0 0;
     width: 95%;
-    min-width: 900px;
+    min-width: 720px;
     display: grid;
     align-self: center;
     justify-content: center;
     grid-template-columns: 35% 65%;
   }
 
-
-  @media (max-width: 61.25em) {
-    .cert-2-section {
-        padding: 10rem 2rem;
-    }
-  }
-
   .cert-2-header {
     position: -webkit-sticky;
     position: sticky;
-    overflow: auto;
+    
     font-size: 3.6rem;
     vertical-align: middle;
     top: 0rem;
@@ -581,12 +569,23 @@
     background-color:#150210;
     z-index: 11;
     height: 8vh;
-    padding-top: 2vh;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  @media (max-width: 61.25em) {
+    .cert-2-section {
+        padding: 10rem 2rem;
+    }
+
+    .cert-2-header {
+      font-size: 3rem;
+    }
   }
   
   @media (max-width: 28.75em) {
     .cert-2-header {
-      font-size: 3.6rem;
+      font-size: 2.4rem;
     }
   }
 
