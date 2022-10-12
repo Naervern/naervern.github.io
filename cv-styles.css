@@ -282,7 +282,7 @@
   
   .cert-section {
     text-align: center;
-    padding: 10rem 2rem 10rem 165px;
+    padding: 10rem 4rem 10rem 4rem;
     background: var(--wine-colour);
 
   }
@@ -646,13 +646,13 @@
       display: flex;
       justify-content: space-evenly;
       padding: 2rem;
+      padding-left: 155px;
       background: black;
       border-top: 5px solid var(--second-colour);
     }
     
     footer > p {
       margin: 2rem;
-      padding-left: 155px;
     }
     
     footer i {
