@@ -253,6 +253,7 @@
     padding: 10vh;
 
     width: 100%;    
+    max-width: 1600px;
     min-height: 8rem;
     height: 36vh;
     max-height: 2160px;
