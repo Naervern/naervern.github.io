@@ -722,14 +722,18 @@
 /* Image formatting */
 
   #selfie {
+    position: relative; 
     float: right;
     margin: 5px;
-    height: 22vh;
+    height: 28vh;
+    top: -6vh;  
   }
 
   @media (max-width: 61.25em) {
     #selfie {
       float: none;
+      margin: 5px;
+      height: 22vh;
     }
   }
 
