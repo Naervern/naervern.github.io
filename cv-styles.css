@@ -511,14 +511,13 @@
     border-color:var(--second-colour) !important;
     margin:0;
     padding: 2rem;
-    counter-increment: section;
     position: relative;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
 
   .language-list p {
-    padding-top: 2  rem;
+    padding-top: 2rem;
     padding-bottom: 0rem;
   }
 
@@ -529,18 +528,30 @@
   }
 
   .skill-dual{
+    left: 3vw;
     min-width: 480px;
     width: 95%;
     display: grid;
     padding: 2rem;
     position: relative;
     align-self: center;
+    grid-gap: 10rem;
     grid-template-columns: minmax(240px, 2fr) minmax(360px, 3fr);
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     .skill-dual{
       grid-template-columns: minmax(120px, 1fr);
+    }
+
+    .language-list {
+      min-width: 600px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .language-list {
+      min-width: 440px;
     }
   }
 
