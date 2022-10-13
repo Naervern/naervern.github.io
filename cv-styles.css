@@ -494,7 +494,7 @@
     list-style: none;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
     grid-gap: 5rem;
     min-width: 480px;
     max-width: 1920px;
@@ -514,6 +514,10 @@
     position: relative;
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .skill-list p {
+    min-width: 440px;
   }
 
   .language-list p {
