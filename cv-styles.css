@@ -318,10 +318,10 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 4rem;
     width: 100%;
-    max-width: 1600px;
+    max-width: 86vw;
     margin: 0 auto;
     margin-bottom: 6rem;
     padding-top: 2rem;
@@ -334,6 +334,7 @@
   
     .projects-grid {
       grid-template-columns: 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
   }
   
