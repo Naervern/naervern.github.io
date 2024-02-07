@@ -183,6 +183,10 @@
   h2 {
     font-size: 4.2rem;
   }
+
+  .h4 {
+    padding: 3rem 1rem 1rem 1rem;
+  }
   
   ul {
     list-style: none;
@@ -368,6 +372,8 @@
     padding: 10rem 2rem 10rem 175px;
     background: var(--fourth-colour);
     border-top: 5px solid var(--second-colour);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   @media (max-width: 61.25em) {
