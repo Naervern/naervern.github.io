@@ -35,7 +35,17 @@
   -->
 
 <style>
+    @keyframes highlightTextPulse {
+      0% {color: #c0c0c0;}
+      33% {color: #ffa407;}
+      66% {color: #c0c0c0;}
+      100% {color: #fff200;}
+    }
 
+    #blinkingText{
+      color:rgb(255, 255, 255);
+      -webkit-animation: highlightTextPulse 4s infinite alternate;  
+    }
 </style>
 
 <script>
@@ -89,9 +99,12 @@
       <p>Digital Art Commissions</p>
     </section>
 
+
+    
     <section id="projects" class="projects-section">
       <h2 class="header1">Showcase</h2>
       <div class="projects-grid">
+        <!--
         <a
           href="https://www.deviantart.com/naervern/art/Sax-dragon-sketch-889323718"
           target="_blank"
@@ -105,10 +118,25 @@
           <p class="project-title">
             Sketch
           </p>
+        </a>-->
+        
+        <a
+          href="resources\art_gallery\Anuhea-and-Maynard-2 signed no colour.jpg"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img min-width="400px"
+            class="project-image"
+            src="resources\art_gallery\Anuhea-and-Maynard-2 signed no colour.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            Sketch
+          </p>
         </a>
 
         <a
-          href="https://www.deviantart.com/naervern/art/Two-dragons-and-bedtime-stories-855399108"
+          href=""
           target="_blank"
           class="project project-tile"
         >
@@ -118,7 +146,52 @@
             alt="project"
           />
           <p class="project-title">
-            Flat Colour
+            Telegram Sticker
+          </p>
+        </a>
+
+        <!--<a
+        href="resources\art_gallery\Little Tial on hand.png" 
+        target="_blank"
+        class="project project-tile"
+      >
+        <img min-width="400px"
+          class="project-image"
+          src="resources\art_gallery\Little Tial on hand.png"
+          alt="project"
+        />
+        <p class="project-title">
+          Telegram Sticker
+        </p>
+      </a>-->
+
+      <a
+        href="resources\art_gallery\sleep naer 1 512p.png" 
+        target="_blank"
+        class="project project-tile"
+      >
+        <img min-width="400px"
+          class="project-image"
+          src="resources\art_gallery\sleep naer 1 512p.png"
+          alt="project"
+        />
+        <p class="project-title">
+          Telegram Sticker
+        </p>
+      </a>
+
+        <a
+          href="https://cdna.artstation.com/p/assets/images/images/072/430/536/large/naervern-jooo-drawing-comm-watermarked.jpg?1707335550"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img min-width="400px"
+            class="project-image"
+            src="https://cdna.artstation.com/p/assets/images/images/072/430/536/large/naervern-jooo-drawing-comm-watermarked.jpg?1707335550"
+            alt="project"
+          />
+          <p class="project-title">
+            Simple Shading
           </p>
         </a>
 
@@ -134,6 +207,21 @@
           />
           <p class="project-title">
             Digital Painting
+          </p>
+        </a>
+
+        <a
+          href="resources\art_gallery\Plushie OC - Zenith - watermarked res.jpg"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img min-width="400px"
+            class="project-image"
+            src="resources\art_gallery\Plushie OC - Zenith - watermarked res.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            Ref Sheet
           </p>
         </a>
 
@@ -210,10 +298,10 @@
         The commissioner has rights for non-commercial personal uses, as stated:
 
         <li><p>To display and reproduce so long as the purpose is personal and non-commercial;</p></li>
-        <li><p>To make modifications that don’t alter the outline of the art, which means the following is allowed: to recolour, add image filters, adjustments and the likes and to crop so long as the signature is not removed unless for display as an avatar, profile picture or thumbnail for a project;</p></li>
+        <li><p>To make modifications that don’t alter the outline of the art, which means the following is allowed: to recolour, add image filters, adjustments and the likes and to crop so long as the signature is not removed unless for display as an avatar, profile picture or thumbnail for a project or if given explicit permission;</p></li>
         <li><p>To gift a physical reproduction (i.e. print) and grant the rights in this same category to anyone of their choice.</p></li>
         <br>
-        <p>The commissioner may not remove the signature when uploading the art online. Except in case of using it as an avatar, profile picture or thumbnail or if given permission.</p>
+        <div id="blinkingText"><p>No permission is granted to use the art for purposes of training, feeding or employing any generative neural network! (That means, any use for "A.I")</p></div>
         <br>
       <p>However, commercial use and related rights are limited and should be discussed as specific case if required:</p>
       <p> - Sell the ownership of such rights;<p>
